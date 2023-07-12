@@ -1,5 +1,5 @@
 axios
-  .get("https://www.reddit.com/r/WorldPanorama/new.json?&before=t3_14vdo1u&limit=50&t=week")
+  .get("https://www.reddit.com/r/WorldPanorama/new.json?&before=t3_14xlklv&limit=99&t=week")
   .then(function (response) {
     var users = {};
     var posts = response.data.data.children;
