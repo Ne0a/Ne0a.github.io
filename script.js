@@ -8,6 +8,7 @@ axios
       "[deleted]",
       "AutoModerator",
       "Ne0--",
+      "xXMstfkrXx",
     ];
 
     var userPhotos = {
@@ -122,7 +123,7 @@ axios
     
           tableBody.innerHTML = "";
     
-          var userCount = Math.min(sortedUsers.length, 25);
+          var userCount = Math.min(sortedUsers.length, 10);
           for (var k = 0; k < userCount; k++) {
             var user = sortedUsers[k][0];
             var row = document.createElement("tr");
