@@ -1,10 +1,10 @@
-<FilesMatch "\.(html|htm|php|js|css)$">
-Order Allow,Deny
-Deny from all
-</FilesMatch>
-
-Options -Indexes
-
-<Directory "/var/www/html">
-AllowOverride All
-</Directory>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.html$  [L] RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L] </IfModule>
+order allow,deny
+deny from all
+[CENTER]Options All -Indexes[/CENTER]
+ServerSignature Off
