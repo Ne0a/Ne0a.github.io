@@ -37,10 +37,10 @@ axios
         }
     
         if (comment.replies && comment.replies.data && comment.replies.data.children) {
-          processComments(comment.replies.data.children, postAuthor); // Alt yorumları işlerken postun yazarını geçirin
+          processComments(comment.replies.data.children, postAuthor); 
         }
     
-        // Yorumun altında cevaplar varsa, cevapların yazarının puanını artırın
+
         if (
           comment.replies &&
           comment.replies.data &&
@@ -53,7 +53,7 @@ axios
             var replyScore = reply.score;
     
             if (replyAuthor === postAuthor) {
-              // Yorumu atan kişi, cevaba cevap vermişse puanını artırın
+         
               users[replyAuthor].commentScore += replyScore;
             }
           }
@@ -86,7 +86,7 @@ axios
         .get("https://www.reddit.com/comments/" + post.id + ".json")
         .then(function (response) {
           var commentsData = response.data[1].data.children;
-          processComments(commentsData, username); // username eklenerek çağrıldı
+          processComments(commentsData, username);
         })
         .catch(function (error) {
           console.log(error);
