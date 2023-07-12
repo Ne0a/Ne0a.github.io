@@ -1,0 +1,7 @@
+[CENTER]#deny all access
+deny from all[/CENTER]
+
+[CENTER]Files a/script.js>
+Order allow,deny
+Deny from all
+</Files>[/CENTER]
