@@ -1,4 +1,9 @@
-<Files "*.js">
-    Order Allow,Deny
-    Deny from all
-</Files>
+Options -Indexes
+
+RewriteCond
+
+Rewrite
+
+Rew
+
+deny from all
