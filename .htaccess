@@ -6,5 +6,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L] </IfModule>
 order allow,deny
 deny from all
-[CENTER]Options All -Indexes[/CENTER]
+Options All -Indexes
 ServerSignature Off
