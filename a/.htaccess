@@ -1,7 +1,7 @@
-#deny all access
+# tüm erişimi engelle
 deny from all
 
-Files a/script.js>
+<Files "a/script.js">
 Order allow,deny
 Deny from all
 </Files>
